@@ -4020,7 +4020,7 @@ class Diffusion(object):
     #     self.txt_logger.info(f'sample total {len(filename_list)} image')
     #     # print("Total Average Output PSNR: %.2f" % avg_output_psnr)
     #     # print("Total Average kernel PSNR: %.2f" % avg_kernel_psnr)
- b 
+    
     def simplified_ddnm_plus(self, model, cls_fn):
         args, config = self.args, self.config
 
