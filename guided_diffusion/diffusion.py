@@ -199,7 +199,7 @@ class Diffusion(object):
                 print("Loading checkpoint {}".format(ckpt))
             elif name == 'celeba_hq':
                 # ckpt = os.path.join(self.args.exp, "logs/celeba/celeba_hq.ckpt")
-                ckpt = '/eva_data3/shlu2240/checkpoints/diffusion/celeba_hq.ckpt'
+                ckpt = self.args.diffusion_ckpt
                 if not os.path.exists(ckpt):
                     download('https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt',
                              ckpt)
@@ -222,7 +222,7 @@ class Diffusion(object):
                         'https://openaipublic.blob.core.windows.net/diffusion/jul-2021/%dx%d_diffusion_uncond.pt' % (
                         self.config.data.image_size, self.config.data.image_size), ckpt)
             else:
-                ckpt = '/eva_data3/shlu2240/checkpoints/diffusion/256x256_diffusion_uncond.pt'
+                ckpt = self.args.diffusion_ckpt
                 # ckpt = os.path.join(self.args.exp, "logs/imagenet/256x256_diffusion_uncond.pt")
                 if not os.path.exists(ckpt):
                     download(

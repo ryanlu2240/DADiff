@@ -149,7 +149,8 @@ def parse_args_and_config():
     parser.add_argument(
         "--sample_number", type=int, default=-1
     )
-    
+    parser.add_argument(
+        '--diffusion_ckpt', type=str, default="/eva_data4/shlu2240/checkpoint/diffusion/256x256_diffusion_uncond.pt")    
 
     args = parser.parse_args()
 

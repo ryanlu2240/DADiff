@@ -28,7 +28,7 @@ network_g:
 
 path:
   root: /eva_data1/shlu2240/Learning_Degradation
-  pretrain_network_g: /eva_data3/shlu2240/checkpoints/LD/div2k_blind_x4.pth #v1
+  pretrain_network_g: /eva_data4/shlu2240/checkpoint/LD/div2k_blind_x4.pth #v1 
   resume_state: ~
 
 # validation settings
